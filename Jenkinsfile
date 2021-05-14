@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -a"
-                sh "docker build -t"
+                sh "docker build -t Dockerfile"
             }
         }
 
