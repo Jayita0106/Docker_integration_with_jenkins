@@ -17,6 +17,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -a"
+				sh "sudo usermod -a -G docker $USER"
                 sh "docker build -f Dockerfile -t tomcatsamplewebapp:${env.BUILD_ID} ."
             }
         }
